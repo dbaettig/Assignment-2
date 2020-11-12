@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap');
+
+.navigationWrapper{
+
+}
+.navigationList{
+  display: grid;
+  grid-auto-flow: column;
+  column-gap:20px;
+
+}
+.navigationListItem{
+  list-style: none;
+  font-family:  'Montserrat', sans-serif;
+  color:#BD897E;
+  font-size:1.2em;
+}
+.navigationList a{
+  text-decoration:none;
+  color:#BD897E;
+
+}
+.navigationListItem:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.home{
+  justify-self: end;
+}
+.login{
+  justify-self: end;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.homePageWrapper,.profilePageWrapper {
+  background-color:  #D7D0C8;
+  width:90%;
+  height:100vh;
+  margin: 0 auto;
+  margin-top:200px;
 }
+.homePageWrapper h1, .profilePageWrapper h1{
+  font-size:9em;
+  font-family: 'Libre Baskerville', serif;
+  left: 100px;
+  top: 42px;
+  position: absolute;
+}
+.profilePageWrapper {
+  background-color:  #C8C6AF;
+  display:grid;
+  justify-content: center;
+  align-content: center;
+
+}
+.profilePageWrapper h2{
+  font-family:  'Montserrat', sans-serif;
+}
+
+.loginPageWrapper{
+  display:grid;
+  justify-content: center;
+  margin-top:300px;
+
+}
+.loginPageWrapper h1{
+  font-family: 'Libre Baskerville', serif;
+text-align:center;
+margin-bottom:30px;
+}
+.inputWrapper input{
+  border-radius: 0;
+    border: 1px solid black;
+
+    height:20px;
+  
+}
+
+.inputWrapper button{
+  border:1px solid #95A78D;
+  background-color:transparent;
+  font-family:  'Montserrat', sans-serif;
+  outline:none;
+  padding:5px 10px;
+  width:100%;
+  font-size:1.2em;
+  margin-top:10px;
+}
+
+.inputWrapper button:hover{
+  background-color:#95A78D;
+  color:white;
+
+}
+  button {
+    outline: none;
+  }
